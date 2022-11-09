@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+#unit {
+    font-size: 2rem;
+    border: 0.5rem solid red;
+}
+
+.card {
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text{
+    padding: 10px;
+}
+
+.gradient {
+    height: 200px;
+    width: 350px;
+    text-align: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(189,195,48,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.gradient > h1 {
+    padding-top: 15px;
+}
+
+.flex-container {
+    width: 750px;
+    background: #06283d;
+    display: flex;
+}
+
+.flex-container > div {
+    background: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#transition {
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#transition:hover {
+    width: 100px;
+    transform: rotate(360deg);
+}
+
+#box{
+    height: 100px;
+    width: 100px;
+    background: skyblue;
+    animation-name: animations;
+    animation-duration: 4s;
+}
+
+@keyframes animations {
+    0%   {background-color: skyblue;}
+    25%  {background-color: green;}
+    50%  {background-color: blue;}
+    100% {background-color: brown;}
+}
+
+.flex-1-parent {
+    height: 300px;
+    width: 1100px;
+    background: linear-gradient(90deg, #00ffeb 0%, #073abb 100%);
+    text-align: center;
+}
+
+.flex-1-parent > p {
+    text-shadow: 0.2rem 0.2rem red;
+}
+
+.flex-1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgs-1 {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.rot {
+    transition: transform 1s;
+}
+
+.rot:hover {
+    transform: rotate(20deg);
+}
