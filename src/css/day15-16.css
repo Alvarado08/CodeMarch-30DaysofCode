@@ -1,3 +1,9 @@
+:root {
+    --section-title-size: 1.2rem;
+    --section-title-bold: 700;
+    --section-desc: 15px;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -92,6 +98,15 @@ body {
 
 /** SECTIONS */
 
+.title {
+    font-size: var(--section-title-size);
+    font-weight: var(--section-title-bold);
+}
+
+.desc {
+    margin-top: var(--section-desc);
+}
+
 /** HERO */
 .hero-container {
     display: flex;
@@ -104,19 +119,53 @@ body {
     width: 50%;
 }
 
-#hero-des {
-    margin-top: 15px;
-}
-
-#hero-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
 .hero-info button {
     margin-top: 20px;
     border: none;
     background: black;
     padding: 8px 15px;
     color: white;
+}
+
+/** SERVICES */
+.services {
+    margin-left: 60px;
+}
+
+.services-container {
+    display: grid;
+    gap: 5px 5px;
+    grid-template-columns: auto auto auto;
+    margin: 20px 0;
+}
+
+.services-card {
+    padding: 15px 20px;
+    height: fit-content;
+    width: 350px;
+    background: white;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.services-card:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+}
+
+.img-container {
+    margin-bottom: 10px;
+}
+
+.img-container img{
+    width: 40%;
+}
+
+.services-card-title {
+    font-size: 1.1rem;
+    font-weight: var(--section-title-bold);
+}
+
+.services-card-info {
+    word-wrap: break-word;
 }
